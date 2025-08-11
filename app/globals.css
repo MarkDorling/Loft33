@@ -1,0 +1,142 @@
+/* ===========================
+   1. Tailwind base imports
+   =========================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-1 {
+  --bg-primary:   theme(colors.darkslate);   /* footer */
+  --bg-secondary: theme(colors.offwhite);    /* body */
+  --text-primary: theme(colors.offwhite);    /* on footer */
+  --text-secondary: theme(colors.darkslate); /* on body */
+  --btn-primary-bg: theme(colors.darkslate);
+  --btn-primary-text: theme(colors.offwhite);
+  --btn-secondary-bg: theme(colors.offwhite);
+  --btn-secondary-text: theme(colors.darkslate);
+  --card-bg: theme(colors.offwhite);
+  --card-text: theme(colors.darkslate);
+}
+
+
+.theme-2 {
+  --bg-primary:   theme(colors.charcoal);    /* footer */
+  --bg-secondary: theme(colors.darkslate);   /* body */
+  --text-primary: theme(colors.rust);
+  --text-secondary: theme(colors.rust);
+  --btn-primary-bg: theme(colors.charcoal);
+  --btn-primary-text: theme(colors.rust);
+  --btn-secondary-bg: transparent;           /* outline button */
+  --btn-secondary-text: theme(colors.rust);
+  --card-bg: theme(colors.charcoal);
+  --card-text: theme(colors.rust);
+  --border-color: theme(colors.rust);
+}
+
+
+.theme-3 {
+  --bg-primary:   theme(colors.darkslate);
+  --bg-secondary: theme(colors.offwhite);
+  --text-primary: theme(colors.offwhite);
+  --text-secondary: theme(colors.darkslate);
+  --btn-primary-bg: theme(colors.bluebrand); /* AA with dark text */
+  --btn-primary-text: theme(colors.darkslate);
+  --btn-secondary-bg: theme(colors.offwhite);
+  --btn-secondary-text: theme(colors.darkslate);
+  --card-bg: theme(colors.offwhite);
+  --card-text: theme(colors.darkslate);
+}
+
+
+.theme-4 {
+  --bg-primary:   theme(colors.darkslate);
+  --bg-secondary: theme(colors.lightgrey);
+  --text-primary: theme(colors.offwhite);
+  --text-secondary: theme(colors.darkslate);
+  --btn-primary-bg: theme(colors.darkslate);
+  --btn-primary-text: theme(colors.offwhite);
+  --btn-secondary-bg: theme(colors.offwhite);
+  --btn-secondary-text: theme(colors.darkslate);
+  --card-bg: theme(colors.offwhite);
+  --card-text: theme(colors.darkslate);
+}
+
+.theme-5 {
+  --bg-primary:   theme(colors.charcoal);
+  --bg-secondary: theme(colors.offwhite);
+  --text-primary: theme(colors.offwhite);
+  --text-secondary: theme(colors.darkslate);
+  --btn-primary-bg: theme(colors.darkslate);
+  --btn-primary-text: theme(colors.offwhite);
+  --btn-secondary-bg: theme(colors.bluebrand); /* AA w/ dark text */
+  --btn-secondary-text: theme(colors.darkslate);
+  --card-bg: theme(colors.offwhite);
+  --card-text: theme(colors.darkslate);
+}
+
+/* ===========================
+   3. Global element defaults
+   =========================== */
+html, body { height: 100%; }
+body {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+}
+a { text-underline-offset: 2px; }
+
+/* ===========================
+   4. Layout helpers
+   =========================== */
+.container { @apply max-w-7xl mx-auto px-4; }
+.section   { @apply py-12 md:py-16; }
+
+/* ===========================
+   5. Role-based background & text classes
+   =========================== */
+.bg-primary     { background-color: var(--bg-primary); }
+.bg-secondary   { background-color: var(--bg-secondary); }
+.text-primary   { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+
+/* ===========================
+   6. Buttons
+   =========================== */
+.btn {
+  @apply inline-flex items-center gap-2 rounded-md px-5 py-3 font-medium transition;
+}
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.btn-primary:hover { opacity: 0.9; }
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border: 1px solid var(--btn-secondary-text);
+}
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-text);
+  color: var(--btn-secondary-bg);
+}
+
+/* ===========================
+   7. Cards
+   =========================== */
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  @apply rounded-lg shadow-sm border border-lightgrey;
+}
+
+/* ===========================
+   8. Headings
+   =========================== */
+h1 { @apply text-4xl md:text-5xl font-semibold; }
+h2 { @apply text-2xl md:text-3xl font-semibold; }
+
+/* ===========================
+   9. Footer tweaks
+   =========================== */
+footer a { @apply underline; }
