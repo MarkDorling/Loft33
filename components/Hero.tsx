@@ -1,4 +1,6 @@
 'use client';
+import Image from "next/image";
+
 
 export default function Hero() {
   return (
@@ -17,12 +19,17 @@ export default function Hero() {
         </div>
 
         {/* Placeholder visual – swap with a hero image */}
-        <div className="card p-0 overflow-hidden">
-          <div className="aspect-[4/3] w-full bg-lightgrey flex items-center justify-center text-secondary">
-            Add your best project photo here
-          </div>
+        <div className="flex-1">
+          <Image
+            src="/hero-image.jpg" // from public folder
+            alt="Custom marine cover"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg object-cover"
+            priority
+          />
         </div>
-      </div>
+        </div>
     </section>
   );
 }
