@@ -14,7 +14,7 @@ export default function Hero() {
           </p>
           <div className="mt-6 flex gap-3">
             <a href="mailto:mark@loft33.au?subject=Boat%20cover%20enquiry" className="btn btn-secondary">Get in touch</a>
-            <a href="tel:0407065174" className="btn btn-primary">Call 0407 065 174</a>
+            <a href="tel:0447091898" className="btn btn-primary">Call 0407 065 174</a>
           </div>
         </div>
 
