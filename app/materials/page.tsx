@@ -1,20 +1,49 @@
+// app/materials/page.tsx
 import Link from 'next/link';
+import { categoriesInOrder, materials } from './_data';
+
 export const metadata = { title: 'Materials — Loft 33' };
-export default function Page(){
-  const items=[{slug:'weathermax',label:'Weathermax'},{slug:'sunbrella',label:'Sunbrella'},{slug:'tenara',label:'Tenara (PTFE thread)'}];
+
+export default function MaterialsIndex() {
+  const grouped = categoriesInOrder.map(cat => ({
+    cat,
+    items: materials.filter(m => m.category === cat),
+  }));
+
   return (
-    <section className='section bg-secondary text-secondary'>
-      <div className='container'>
-        <h1 className='text-secondary'>Materials</h1>
-        <ul className='mt-6 grid md:grid-cols-3 gap-4'>
-          {items.map(it=>(
-            <li key={it.slug} className='card p-5'>
-              <p className='font-medium'>{it.label}</p>
-              <Link className='underline mt-2 inline-block' href={`/materials/${it.slug}`}>Learn more</Link>
-            </li>
+    <section className="section bg-secondary text-secondary">
+      <div className="container">
+        <header className="mb-8">
+          <h1 className="text-secondary">Materials</h1>
+          <p className="mt-3 max-w-2xl">
+            We specify trusted, premium materials for marine conditions. Explore what we use and why.
+          </p>
+        </header>
+
+        <div className="space-y-10">
+          {grouped.map(({ cat, items }) => (
+            <div key={cat}>
+              <h2 className="mb-4">{cat}</h2>
+              <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {items.map((m) => (
+                  <li key={m.slug} className="card p-6 flex flex-col">
+                    <div className="text-sm opacity-70">{m.category}</div>
+                    <h3 className="mt-1 text-xl font-semibold">{m.name}</h3>
+                    <p className="mt-2 text-sm">{m.tagline}</p>
+                    <Link
+                      href={`/materials/${m.slug}`}
+                      className="btn btn-secondary mt-4 w-fit"
+                      aria-label={`Learn more about ${m.name}`}
+                    >
+                      Learn more
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
-  )
+  );
 }
