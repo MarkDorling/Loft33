@@ -65,7 +65,7 @@ export default function MaterialPage({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="mt-6">
-              <h3 className="font-semibold">Trade-offs (honest view)</h3>
+              <h3 className="font-semibold">Trade-offs</h3>
               <ul className="mt-2 list-disc pl-5 space-y-1">
                 {m.tradeOffs.map((b) => <li key={b}>{b}</li>)}
               </ul>
