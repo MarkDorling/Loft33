@@ -57,24 +57,23 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           ))}
         </div>
 
-            {/* Gallery — full width (stacked) */}
-            {images.length > 0 && (
+            {/* Full-width, max height = viewport, no crop */}
             <div className="mt-6 space-y-4">
-                {images.map((src, i) => (
-                <figure key={src} className="overflow-hidden rounded-xl">
-                    <Image
+            {images.map((src, i) => (
+                <figure key={src} className="overflow-hidden rounded-xl flex justify-center">
+                <Image
                     src={src}
                     alt={`${p.title} — image ${i + 1}`}
-                    width={2400}               // big enough source for large screens
+                    width={2400}
                     height={1600}
-                    sizes="100vw"              // tell browser it spans the full viewport width (inside container)
-                    className="w-full h-auto object-cover"
-                    priority={i === 0}         // first image eager-load
-                    />
+                    sizes="100vw"
+                    className="w-full h-auto object-contain [max-height:80svh]"  // clamp to viewport height
+                    priority={i === 0}
+                />
                 </figure>
-                ))}
+            ))}
             </div>
-            )}
+
 
 
         <article className="mt-8 prose prose-invert max-w-none">
