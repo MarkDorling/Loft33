@@ -1,14 +1,155 @@
 [
   {
-    "title": "Hatch Covers",
-    "description": "Sunbrella hatch covers for the magnificent Jeanneau 57 “First Picasso”",
-    "image": "/projects/Hatch Covers.jpg",
-    "link": "/projects/Hatch Covers"
+    "jobNo": "L33-1",
+    "slug": "l33-1-tiller-cover-seadate",
+    "title": "Tiller Cover — Seadate",
+    "excerpt": "Replace end-of-life tiller cover.",
+    "body": [
+      "Replacement tiller cover to improve protection and appearance.",
+      "Sized and patterned to suit existing hardware and geometry."
+    ],
+    "images": [
+      "/project-images/L33-1/01.jpg",
+      "/project-images/L33-1/02.jpg"
+    ],
+    "materials": [],
+    "location": "Seadate",
+    "year": null
   },
   {
-    "title": "Furler Cover",
-    "description": "Complete seating refit in Sunbrella® fabric with tailored fit.",
-    "image": "/projects/Furler Cover.jpg",
-    "link": "/projects/Furler Cover"
+    "jobNo": "L33-2",
+    "slug": "l33-2-console-cover-aussie-whaler",
+    "title": "Console Cover — Aussie Whaler",
+    "excerpt": "New console cover to protect electrics.",
+    "body": [
+      "Custom console cover to shield electronics from UV and spray.",
+      "Quick on/off design to support frequent use."
+    ],
+    "images": [
+      "/project-images/L33-2/01.jpg",
+      "/project-images/L33-2/02.jpg"
+    ],
+    "materials": [],
+    "location": "Aussie Whaler",
+    "year": null
+  },
+  {
+    "jobNo": "L33-3",
+    "slug": "l33-3-rope-bags-seadate",
+    "title": "Cockpit Rope Bags — Seadate",
+    "excerpt": "Replace four cockpit rope bags; two are in very poor condition.",
+    "body": [
+      "Set of four replacement rope bags for cockpit management.",
+      "Two bags prioritised due to condition; remaining two scheduled as follow-ups."
+    ],
+    "images": [
+      "/project-images/L33-3/01.jpg",
+      "/project-images/L33-3/02.jpg"
+    ],
+    "materials": [],
+    "location": "Seadate",
+    "year": null
+  },
+  {
+    "jobNo": "L33-4",
+    "slug": "l33-4-boom-cover-seadate",
+    "title": "Boom Cover — Seadate",
+    "excerpt": "Upgrade to match boat colours and build portfolio.",
+    "body": [
+      "Boom cover upgrade aligned to vessel colourway.",
+      "Focused on clean finish, durability and easy handling."
+    ],
+    "images": [
+      "/project-images/L33-4/01.jpg",
+      "/project-images/L33-4/02.jpg"
+    ],
+    "materials": [],
+    "location": "Seadate",
+    "year": null
+  },
+  {
+    "jobNo": "L33-6",
+    "slug": "l33-6-console-cover-highfield",
+    "title": "Console Cover — Highfield RIB",
+    "excerpt": "Console cover for Ed & Nicole’s RIB.",
+    "body": [
+      "Protective console cover patterned for Highfield console geometry.",
+      "Aims to reduce UV exposure and weather ingress when moored."
+    ],
+    "images": [
+      "/project-images/L33-6/01.jpg",
+      "/project-images/L33-6/02.jpg"
+    ],
+    "materials": [],
+    "location": "Highfield",
+    "year": null
+  },
+  {
+    "jobNo": "L33-8",
+    "slug": "l33-8-hatch-covers-first-picasso",
+    "title": "Hatch Covers — First Picasso",
+    "excerpt": "Custom hatch covers for protection and clean water shedding.",
+    "body": [
+      "Tailored hatch covers for consistent UV protection and drainage.",
+      "Patterned to suit hatch layout with reinforced wear points."
+    ],
+    "images": [
+      "/project-images/L33-8/01.jpg",
+      "/project-images/L33-8/02.jpg"
+    ],
+    "materials": [],
+    "location": "First Picasso",
+    "year": null
+  },
+  {
+    "jobNo": "L33-12",
+    "slug": "l33-12-pole-bag-time-bandit",
+    "title": "Spinnaker Pole Bag — Time Bandit",
+    "excerpt": "New spinnaker pole bag.",
+    "body": [
+      "Purpose-built pole bag for protection and organised stowage.",
+      "Sized for deck hardware clearances and frequent handling."
+    ],
+    "images": [
+      "/project-images/L33-12/01.jpg",
+      "/project-images/L33-12/02.jpg"
+    ],
+    "materials": [],
+    "location": "Time Bandit",
+    "year": null
+  },
+  {
+    "jobNo": "L33-13",
+    "slug": "l33-13-boom-cover-pretty-woman",
+    "title": "Boom Cover — Pretty Woman",
+    "excerpt": "Replacement boom cover; clips underside, zip to front.",
+    "body": [
+      "Replacement boom cover with underside clip system and forward zip.",
+      "Designed for neat fit, quick removal and long service life."
+    ],
+    "images": [
+      "/project-images/L33-13/01.jpg",
+      "/project-images/L33-13/02.jpg"
+    ],
+    "materials": [],
+    "location": "Pretty Woman",
+    "year": null
+  },
+  {
+    "jobNo": "L33-14",
+    "slug": "l33-14-furler-cover-cooloola",
+    "title": "Furler Cover — Cooloola",
+    "excerpt": "Protective neoprene sleeve to prevent deck impact during sail changes.",
+    "body": [
+      "Neoprene furler sleeve to protect teak deck from impact and scuffing.",
+      "Quick fit/removal with closure suited to on-water changes."
+    ],
+    "images": [
+      "/project-images/L33-14/01.jpg",
+      "/project-images/L33-14/02.jpg"
+    ],
+    "materials": ["Neoprene"],
+    "location": "Cooloola",
+    "year": null
   }
 ]
