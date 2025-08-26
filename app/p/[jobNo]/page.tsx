@@ -1,7 +1,7 @@
 // app/p/[jobNo]/page.tsx
 // ─────────────────────────────────────────────────────────────────────────────
 // Public marketing detail page for a single project.
-// Route param is {jobNo}, e.g. /p/l33-8
+// Route param is {jobNo}, e.g. /p/L33-8
 // - Looks up the project record by jobNo in projects.json
 // - Only renders if isProject === true (or is missing → treated as true)
 // - Uses getProjectImages(jobNo) to render the full gallery
