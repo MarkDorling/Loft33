@@ -140,3 +140,21 @@ h2 { @apply text-2xl md:text-3xl font-semibold; }
    9. Footer tweaks
    =========================== */
 footer a { @apply underline; }
+
+.loft33-logo-link {
+  margin-left: auto;           /* push it to the far right in the flex row */
+  display: inline-flex;
+  align-items: center;
+}
+
+.loft33-logo {
+  height: 28px;                /* control the size */
+  width: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.loft33-logo-link:hover .loft33-logo {
+  transform: scale(1.05);
+}
